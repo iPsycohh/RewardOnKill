@@ -30,10 +30,10 @@ $player = $event->getPlayer();
 if($player instanceof Player){
 $cause = $player->getLastDamageCause(); 
 if($cause instanceof EntityDamageByEntityEvent){ 
-$strunz = $cause->getDamager();
+$kill = $cause->getDamager();
 
 $item1 = Item::get(Item::GOLDEN_APPLE, 0, 1);			
-$strunz->getInventory()->addItem($item1);		
+$kill->getInventory()->addItem($item1);		
                           }
                 }
         }
